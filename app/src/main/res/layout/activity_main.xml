@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/imie_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/imie_tv"
+        app:layout_constraintEnd_toStartOf="@+id/imie_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/imie_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/imie_et"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/imie_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imie_tv" />
+
+
+    <TextView
+        android:id="@+id/nazwisko_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nazwisko_tv"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nazwisko_et"
+        app:layout_constraintEnd_toStartOf="@+id/nazwisko_et"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nazwisko_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/wprowadz_nazwisko_et"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nazwisko_tv"
+        app:layout_constraintTop_toBottomOf="@+id/imie_et" />
+
+
+    <TextView
+        android:id="@+id/liczba_ocen_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/liczba_ocen_tv"
+        app:layout_constraintBaseline_toBaselineOf="@+id/liczba_ocen_et"
+        app:layout_constraintEnd_toStartOf="@+id/liczba_ocen_et"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/liczba_ocen_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/liczba_ocen_et"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/liczba_ocen_tv"
+        app:layout_constraintTop_toBottomOf="@+id/nazwisko_et" />
+
+    <Button
+        android:id="@+id/przycisk_oceny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/oceny_button"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/liczba_ocen_et" />
+
+    <TextView
+        android:id="@+id/srednia_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/przycisk_oceny" />
+
+    <Button
+        android:id="@+id/sukces_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/srednia_tv" />
+    <Button
+        android:id="@+id/porazka_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sukces_bt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

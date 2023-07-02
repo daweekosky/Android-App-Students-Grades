@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">lab1czarnecki</string>
+    <string name="imie_tv">Imię</string>
+    <string name="imie_et">Wprowadź imię</string>
+    <string name="nazwisko_tv">Nazwisko</string>
+    <string name="wprowadz_nazwisko_et">Wprowadz nazwisko</string>
+    <string name="blad_imie">Wprowadz imię</string>
+    <string name="liczba_ocen_tv">Liczba ocen</string>
+    <string name="liczba_ocen_et">Podaj liczbę ocen</string>
+    <string name="blad_nazwisko">Wprowadź nazwisko</string>
+    <string name="blad_liczbaOcen">Wprowadź liczbę ocen 5-15</string>
+    <string name="oceny_button">OCENY</string>
+    <string name="nazwa_przedmiotu_tv">Przedmiot</string>
+    <string name="oblicz_srednia">Oblicz średnią</string>
+    <string name="sukces">Gratulacje! Otrzymujesz zaliczenie!</string>
+    <string name="porazka">Wysyłam podanie o zaliczenie warunkowe</string>
+    <string name="srednia_ok">Super :)</string>
+    <string name="srednia_bad">Tym razem mi nie poszło</string>
+    <string name="srednia">Średnia: %.2f</string>
+    <string-array name="nazwy_przedmiotow_tab">
+        <item>Fiz.</item>
+        <item>Mat.</item>
+        <item>El.</item>
+        <item>TC</item>
+        <item>PP</item>
+        <item>Java</item>
+        <item>TPI</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>ASD</item>
+        <item>MN</item>
+        <item>PRiR</item>
+        <item>ISM</item>
+        <item>PN</item>
+        <item>NI</item>
+    </string-array>
+</resources>
